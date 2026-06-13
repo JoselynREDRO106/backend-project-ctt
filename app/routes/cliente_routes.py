@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from app.models.cliente_models import ClientCreate, ClientResponse, ClientUpdate
+from app.schemas.cliente_models import ClientCreate, ClientResponse, ClientUpdate
 from app.services.cliente_services import ClientServices
 
 client_router = APIRouter(prefix="/clients", tags=["Clients"])
